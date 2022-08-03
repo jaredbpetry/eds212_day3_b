@@ -1,0 +1,43 @@
+---
+title: "eds_day3_b"
+author: "Jared Petry"
+date: "2022-08-03"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(palmerpenguins)
+```
+
+### Make Some Vectors
+```{r}
+marmots <- c("blue", "green", 4, "yellow")
+#----class of object was stored as characters... can't have one vector with different classes within
+#----how to check class: 
+class(marmots)
+```
+
+```{r}
+pika <- c(12.4, 5.6, 7.8, 4.9, 6.9)
+class(pika)
+
+#---- Scalar multiplier 
+scalar_pika <- 5.2*pika
+scalar_pika
+```
+
+```{r}
+bananas <- c(1, 2, 3)
+#----add some spaces to make things easier to look at
+apples <- c(6, 7, 8)
+
+#----adding and subtracting vectors
+bananas + apples 
+bananas-apples
+
+#----dot product
+bananas %*% apples 
+```
+
